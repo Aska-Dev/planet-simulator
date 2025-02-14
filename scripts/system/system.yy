@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"system",
+  "parent":{
+    "name":"#Makros",
+    "path":"folders/#Makros.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

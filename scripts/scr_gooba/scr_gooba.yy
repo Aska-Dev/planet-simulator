@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_gooba",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_gooba",
+  "parent":{
+    "name":"#Skripts",
+    "path":"folders/#Skripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
