@@ -36,7 +36,7 @@ function gooba_move_random()
 		destination_x = round(random_range(x, x+vision_x));
 		destination_y = round(random_range(y, y+vision_y));
 	}
-	until(!check_for_tiletype(destination_x, destination_y, tiles.water));
+	until(!check_for_tiletype(destination_x, destination_y, tiles.water) && distance_to_point(destination_x, destination_y) > minimum_move_distance);
 	
 	gooba_move_to_destination();
 }
@@ -71,6 +71,7 @@ function gooba_search_food()
 		if(distance_to_object(closest_food_source) <= 20)
 		{
 			hunger -= closest_food_source.nutrition;
+			activity_behaviour = behaviours.idle;
 		}
 		else
 		{

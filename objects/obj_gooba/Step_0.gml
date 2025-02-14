@@ -10,8 +10,7 @@ switch(activity_behaviour)
 		gooba_stop_if_at_destination();
 		break;
 	case behaviours.searchFood:
-		gooba_check_body();
-		if(activity_behaviour == behaviours.searchFood) gooba_search_food();
+		gooba_search_food();
 		break;
 }
 

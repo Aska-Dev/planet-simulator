@@ -1,7 +1,7 @@
 
 hunger = 0;
 hunger_buildup = 2;
-becomes_hungry = 200;
+becomes_hungry = 500;
 hunger_death = 1000;
 
 thirst = 0;
@@ -9,9 +9,10 @@ thirst_buildup = 0;
 becomes_thirsty = 500;
 thirst_death = 1000;
 
-vision = 500;
-move_speed = 5;
 
+vision = 250;
+move_speed = 5;
+minimum_move_distance = 100;
 
 
 

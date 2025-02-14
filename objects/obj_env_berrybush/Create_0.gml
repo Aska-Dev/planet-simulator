@@ -1,1 +1,1 @@
-nutrition = 500;
+nutrition = 10000;
