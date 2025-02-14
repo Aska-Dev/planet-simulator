@@ -3,5 +3,7 @@ enum behaviours
 	idle,
 	moving,
 	searchFood,
-	eating
+	eating,
+	searchMate,
+	reproducing
 }

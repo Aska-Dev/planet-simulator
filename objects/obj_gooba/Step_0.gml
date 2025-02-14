@@ -1,3 +1,8 @@
+if(x > room_width || x < 0 || y > room_height || y < 0) 
+{
+	instance_destroy(self);
+}
+
 #region Behaviour controller
 
 switch(activity_behaviour)
@@ -12,11 +17,19 @@ switch(activity_behaviour)
 	case behaviours.searchFood:
 		gooba_search_food();
 		break;
+	case behaviours.searchMate:
+		gooba_search_mate();
+		break;
 }
 
 #endregion
 
 #region Survival conroller
+
+if(reproduction_tick > 0)
+{
+	reproduction_tick -= 1;
+}
 
 hunger += hunger_buildup;
 thirst += thirst_buildup;
